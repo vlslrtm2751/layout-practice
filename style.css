@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -8,10 +9,14 @@ body {
   flex-direction: column;
 }
 
-.container {
+.container1 {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+.row > div{
+  border: 1px solid gray;
+  height: 400px;
 }
 
 header {
@@ -24,9 +29,26 @@ main {
   background-color: lightgreen;
 }
 
+.section01 {
+  width: 100px;
+  z-index: 1;
+  background-color: azure;
+}
+.section02 {
+  margin-left: 100px;
+}
+
 footer {
   height: 70px;
   background-color: lightcoral;
-  position: relative;
-  transform: translatY(-100%);
+}
+
+.custom-row {
+  display: flex;
+  gap: 10px;
+}
+
+.custom-col {
+  border: 1px solid gray;
+  padding: 10px; /* 옵션: 컬럼의 내용과 테두리 사이에 여백을 만들기 위해 padding을 추가할 수 있습니다. */
 }

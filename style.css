@@ -52,3 +52,9 @@ footer {
   border: 1px solid gray;
   padding: 10px; /* 옵션: 컬럼의 내용과 테두리 사이에 여백을 만들기 위해 padding을 추가할 수 있습니다. */
 }
+
+.container3 {
+  display: grid;
+  grid-template-columns: 200px 400px auto;
+  grid-template-rows: 200px 400px 400px;
+}
